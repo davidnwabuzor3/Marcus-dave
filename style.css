@@ -1,245 +1,63 @@
-body{
-    font-family: calibri;
-}
-#container{
-    background-image: url(img/lady222.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    height: 100%;
+#parent{
     width: 100%;
-    left: 0;
+    height: 100%;
+    position: absolute;
     top: 0;
+    left: 0;
+    background-image: url(image/bg.jpg);
 }
-#left{
+.child{
     position: absolute;
+    width: 35%;
+    height: 80%;
     top: 20%;
-    left: 15%;
-    right: 65%;
+    left: 10%;
+    background-color: rgb(243, 161, 9);
+    border-radius: 8px 8px 0px 0px;
 }
-#txt1{
-    font-size: 33px;
-    color: rgb(231, 5, 5);
-    font-weight: 500;
+#logo{position:absolute;
+    height:10%;
+    width:22% ;
+    right:5%;
+    top: 10%;
 }
-#txt2{
+#move{
+    position: absolute;
+    top: 25%;
+    left: 9%;
+}
+#wel{
+    font-size: 25px;
+    color: rgb(66, 63, 63);
+}
+#pro{
+    font-size: 35px;
+    color: rgb(66, 63, 63);
+    font-weight: bold;
+}
+#your{
     font-size: 15px;
-    font-weight: 500;
-}
-#logo{
-    width: 7%;
-    position: absolute;
-    top: 5%;
-    right: 16%;
-}
-#box{
-    width: 16%;
-    height: 48%;
-    background-color: rgb(218, 84, 84);
-    position: absolute;
-    right: 16%;
-    top: 16%;
-    border-radius: 10px;
-}
-#txt3{
-    color: white;
-    position: absolute;
-    top: 2%;
-    right: 18%;
-    font-size: 14px;
-}
-#select{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    position: absolute;
-    top: 12%;
-    left: 2%;
-}
-#country{
-    display: flex;
-    align-items: center;
-    border: 1px solid transparent;
-    color: #fff;
-}
-#country select{
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 12px;
-    padding: 5px 25px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
-    outline: none;
-}
-#country::after{
-    content:icon;
-    position: absolute;
-    right: 5px;
-    font-size: 10px;
-    color: white;
-    pointer-events: none;
-}
-select option{
-    color: black;
+    color: rgb(66, 63, 63);
+    font-weight: lighter;
+    
 }
 #form{
     position: absolute;
-    top: 22%;
-    left: 10%;
-    font-size: 12px;
+    top: 60%;
+    left: 9%;
+}
+.sty{
+    padding: 10px;
+    width: 300px;
+    border-radius: 14px;
+    border: 0;
+    outline: none;
+}
+#submit{
+    width: 380px;
+    background-color: rgb(59, 56, 56);
     color: white;
-}
-#user{
-    padding: 6px;
-    width: 170px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid white;
-    border-radius: 8px;
-    background-image: url(img/Screenshot__1_-removebg-preview.png);
-    background-size: 12px;
-    background-repeat: no-repeat;
-    background-position-x: 6px;
-    background-position-y: 7px;
-}
-#user::placeholder{
-    color: #fff;
-    font-size: 14px;
-    left: 15%;
-    position: absolute;
-}
-#txt4{
-    font-size: 11px;
-}
-#log{
-    padding: 6px;
-    width: 185px;
-    background-color: rgb(148, 9, 9);
-    border: 1px solid white;
-    border-radius: 8px;
-}
-#bt{
-    font-weight: 600;
-}
-a{
-    text-decoration: none;
-    color: white
-}
-#for{
-    position: absolute;
-    left: 6%;
-}
-#reg{
-    padding: 6px;
-    width: 185px;
-    background-color: rgb(20, 8, 8);
-    border: none;
-    border-radius: 3px;
-    font-size: 11px;
-}
-#bottom{
-    height: 18%;
-    width: 100%;
-    background-color: #18171793;
-    position: absolute;
-    bottom: 0;
-}
-#sub1{
-    width: 21%;
-    height: 80%;
-    position: absolute;
-    left: 16%;
-    bottom: 9%;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 10px;
-    border: 1px solid white;
-}
-#log2{
-    height: 85%;
-    position: absolute;
-    bottom: 8%;
-    left: 1%;
-    border-radius: 38px;
-}
-#txt5{
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    font-weight: bold;
-    font-size: 17px;
-    color: #fff;
-}
-#txt6{
-    position: absolute;
-    bottom: 8%;
-    left: 30%;
-    font-size: 10px;
-    color: #fff;
-}
-#sub2{
-    width: 21%;
-    height: 80%;
-    position: absolute;
-    left: 39%;
-    bottom: 9%;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 10px;
-    border: 1px solid white;
-}
-#log3{
-    height: 92%;
-    position: absolute;
-    bottom: 4%;
-    left: 1%;
-    border-radius: 45px;
-}
-#txt7{
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    font-weight: bold;
-    font-size: 17px;
-    color: #fff;
-}
-#txt8{
-    position: absolute;
-    bottom: 8%;
-    left: 30%;
-    font-size: 10px;
-    color: #fff;
-}
-#sub3{
-    width: 21%;
-    height: 80%;
-    position: absolute;
-    left: 62%;
-    bottom: 9%;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 10px;
-    border: 1px solid white;
-}
-#log4{
-    height: 92%;
-    position: absolute;
-    bottom: 4%;
-    left: 1%;
-    border-radius: 85px;
-}
-#txt9{
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    font-weight: bold;
-    font-size: 17px;
-    color: #fff;
-}
-#txt10{
-    position: absolute;
-    bottom: 8%;
-    left: 30%;
-    font-size: 10px;
-    color: #fff;
+    padding: 15px;
+    border: 0;
+    font-size: 15px;
 }
